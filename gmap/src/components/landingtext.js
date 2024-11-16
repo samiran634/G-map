@@ -45,9 +45,8 @@ const LandingText = (props) => {
             scrollTrigger: {
                 trigger: textRef.current,
                 scroller: "body",
-                markers: true,
                 start: "top 0",
-                end: "top -650%",
+                end: "top -100%",
                 scrub: true,
                 pin: true,
             }
@@ -62,11 +61,12 @@ const LandingText = (props) => {
 
         // Then animate the subtitle
         tl.from(subtitleRef.current, {
+            x:50,
             y: -100,
             opacity: 0,
             duration: 1,
             delay: 1,
-            stagger: 0.2,
+            stagger: 0.8,
         });
     }, [textRef, subtitleRef]);
 
