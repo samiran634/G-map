@@ -7,14 +7,14 @@ import world from "../assets/worldmap.png";
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
  
-const text = "welcome to the map";
+const text = "Welcome To Gmap";
 const StyledText = styled.div`
     width: 200%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
-    height: 60vh;
+    height: 80vh;
     color: black;
     font-size: 20em;
     font-weight: 600;
@@ -46,7 +46,7 @@ const LandingText = (props) => {
                 trigger: textRef.current,
                 scroller: "body",
                 start: "top 0",
-                end: "top -100%",
+                end: "top -50%",
                 scrub: true,
                 pin: true,
             }
